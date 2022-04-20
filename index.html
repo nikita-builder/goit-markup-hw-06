@@ -369,9 +369,9 @@
                     <li class="address-list-item"><a class="address-phone link" href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
             </address>
-        </div>
+            </div>
 
-        <div class="footer-icons">
+            <div class="footer-icons">
             <p class="footer-icons-title">Присоединяйтесь</p>
             <ul class="footer-icon-list">
                 <li class="footer-icons-list">
@@ -403,7 +403,22 @@
                     </a>
                 </li>
             </ul>
-        </div>
+            </div>
+
+            <div class="footer-icons">
+                <p class="footer-icons-title">Подпишитесь на рассылку</p>
+                <div class="footer-form-div"></div>
+                <form class="footer-form">
+                    <input type="email" name="email" class="footer-form-email" placeholder="E-mail">
+                    <button type="submit" class="footer-form-button">Подписаться
+                        <svg class="footer-icon-send" width="20px" height="20px">
+                            <use href="./images/svg.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+
+
 
         </div>
     </footer>
@@ -415,7 +430,46 @@
                     <use href="./images/svg.svg#icon-close"></use>
                 </svg>
             </button>
+            <p class="modal-form-title">Оставьте свои данные, мы вам перезвоним</p>
+            <form class="modal-form">
+
+                <div class="modal-form-div">
+                    <label for="name">Имя</label>
+                    <span class="span-input">
+                    <input type="text" name="name" id="name">
+                    <svg class="modal-form-icon" width="18px" height="18px">
+                        <use href="./images/svg.svg#icon-name"></use>
+                    </svg>
+                    </span>
+                </div>
+
+                <div class="modal-form-div">
+                    <label for="tel">Телефон</label>
+                    <span class="span-input" >
+                    <input type="tel" name="tel" id="tel">
+                    <svg class="modal-form-icon" width="18px" height="18px">
+                        <use href="./images/svg.svg#icon-tel2"></use>
+                    </svg>
+                    </span>
+                </div>
+
+                <div class="modal-form-div">
+                    <label for="mail">Почта</label>
+                    <span class="span-input">
+                    <input type="mail" name="mail" id="mail">
+                    <svg class="modal-form-icon" width="18px" height="18px">
+                            <use href="./images/svg.svg#icon-mail"></use>
+                    </svg>
+                    </span>
+                </div>
+
+                <div class="modal-form-div">
+                    <label for="comment">Комментарий</label>
+                    <textarea name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
+                </div>
+                <button type="submit" class="footer-form-button">Отправить</button>
         </div>
+        </form>
     </div>
         <script src="./js/modal.js"></script>
 </body>
