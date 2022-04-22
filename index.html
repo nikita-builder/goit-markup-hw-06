@@ -405,7 +405,7 @@
             </ul>
             </div>
 
-            <div class="footer-icons">
+            <div class="footer-subscribe">
                 <p class="footer-icons-title">Подпишитесь на рассылку</p>
                 <div class="footer-form-div"></div>
                 <form class="footer-form">
@@ -436,7 +436,7 @@
                 <div class="modal-form-div">
                     <label for="name">Имя</label>
                     <span class="span-input">
-                    <input type="text" name="name" id="name">
+                    <input class="modal-input" type="text" name="name" id="name">
                     <svg class="modal-form-icon" width="18px" height="18px">
                         <use href="./images/svg.svg#icon-name"></use>
                     </svg>
@@ -446,7 +446,7 @@
                 <div class="modal-form-div">
                     <label for="tel">Телефон</label>
                     <span class="span-input" >
-                    <input type="tel" name="tel" id="tel">
+                    <input class="modal-input" type="tel" name="tel" id="tel">
                     <svg class="modal-form-icon" width="18px" height="18px">
                         <use href="./images/svg.svg#icon-tel2"></use>
                     </svg>
@@ -456,7 +456,7 @@
                 <div class="modal-form-div">
                     <label for="mail">Почта</label>
                     <span class="span-input">
-                    <input type="mail" name="mail" id="mail">
+                    <input class="modal-input" type="mail" name="mail" id="mail">
                     <svg class="modal-form-icon" width="18px" height="18px">
                             <use href="./images/svg.svg#icon-mail"></use>
                     </svg>
@@ -465,9 +465,17 @@
 
                 <div class="modal-form-div">
                     <label for="comment">Комментарий</label>
-                    <textarea name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
+                    <textarea name="comment" id="comment" rows="8" class="modal-comment" placeholder="Введите текст"></textarea>
                 </div>
-                <button type="submit" class="footer-form-button">Отправить</button>
+                <div class="checkbox-div">
+                    <label class="checkbox-label" for="checkbox">
+                    <input class="checkbox" type="checkbox" name="checkbox" id="checkbox">
+                    <span class="checkbox-icon"></span>Соглашаюсь с рассылкой и принимаю<span class="checkbox-accent">Условия договора</span>
+                    </label>
+                </div>
+                <div class="modal-checkbox-button">
+                    <button type="submit" class="footer-form-button">Отправить</button>
+                </div>
         </div>
         </form>
     </div>
